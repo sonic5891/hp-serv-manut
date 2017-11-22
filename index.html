@@ -7,7 +7,7 @@
 
 	<link rel="shortcut icon" href="img/ico/hp_icon.jpg">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-	<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 	<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -18,7 +18,7 @@
 <body id="hpPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 	
 	<header>
-		<nav id="hpMainNav" class="navbar navbar-inverse navbar-expand-lg navbar-fixed-top">
+		<nav id="hpMainNav" class="navbar navbar-inverse navbar-dark navbar-expand-lg navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">
 					<a class="navbar-brand" href="#hpPage">HP Serviços e Manutenção</a>
@@ -30,8 +30,8 @@
 				</div>
 				<div class="collapse navbar-collapse" id="hpNavbar">
 					<ul class="nav navbar-nav navbar-right ml-auto">
-						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">SERVIÇOS</a></li>
-						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">PORTFÓLIO</a></li>
+						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#servicos">SERVIÇOS</a></li>
+						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">PORTFÓLIO</a></li>
 						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">SOBRE NÓS</a></li>
 						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">NOSSA EQUIPE</a></li>
 						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">CONTATO</a></li>
@@ -39,7 +39,386 @@
 				</div>
 			</div>
 		</nav>
+
+		<div id="carousel-hp" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-hp" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-hp" data-slide-to="1"></li>
+				<li data-target="#carousel-hp" data-slide-to="2"></li>
+			</ol>
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<figure class="item active">
+					<img src="img/hp-loja1.jpg" class="img-responsive" width="100%" alt="Loja 1 HP">
+					<figcaption class="carousel-caption">
+						<div class="intro-saudacao">Bem Vindo a nossa Empresa</div>
+						<div class="saudacao-cabecalho text-uppercase">É um prazer conhece-lo</div>
+					</figcaption>
+				</figure>
+				
+				<figure class="item">
+					<<img src="img/4ijpy7eadqw6.jpg" class="img-responsive" width="100%" alt="Serviços HP">
+					<figcaption class="carousel-caption">
+						<div class="intro-saudacao">Bem Vindo a nossa Empresa</div>
+						<div class="saudacao-cabecalho text-uppercase">É um prazer conhece-lo</div>
+					</figcaption>
+				</figure>
+
+				<figure class="item">
+					<img src="img/hp-equipe1.jpg" class="img-responsive" width="100%" alt="Equipe HP">
+					<figcaption class="carousel-caption">
+						<div class="intro-saudacao">Bem Vindo a nossa Empresa</div>
+						<div class="saudacao-cabecalho text-uppercase">É um prazer conhece-lo</div>
+					</figcaption>
+				</figure>
+			</div>
+
+			<!-- Controls -->
+			<a class="left carousel-control" href="#carousel-hp" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#carousel-hp" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
 	</header>
+
+	<section id="servicos" class="container-fluid text-center">
+		<div class="row">
+			<div class="col-sm-12">
+				<h2 class="titulo-secao text-uppercase">SERVIÇOS</h2>
+				<h3 class="subtitulo-secao text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-6 col-md-4">
+				<span class="fa-stack fa-4x">
+					<i class="fa fa-circle fa-stack-2x text-primary"></i>
+					<i class="fa fa-building-o fa-stack-1x fa-inverse"></i>
+				</span>
+				<h4 class="titulo-servico">CONSTRUÇÂO</h4>
+				<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+			</div>
+
+			<div class="col-sm-6 col-md-4">
+				<span class="fa-stack fa-4x">
+					<i class="fa fa-circle fa-stack-2x text-primary"></i>
+					<i class="fa fa-certificate fa-stack-1x fa-inverse"></i>
+				</span>
+				<h4 class="titulo-servico">CERTIFICAÇÃO</h4>
+				<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+			</div>
+
+			<div class="col-sm-12 col-md-4">
+				<span class="fa-stack fa-4x">
+					<i class="fa fa-circle fa-stack-2x text-primary"></i>
+					<i class="fa fa-wrench fa-stack-1x fa-inverse"></i>
+				</span>
+				<h4 class="titulo-servico">MANUTENÇÃO</h4>
+				<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="portfolio" class="container-fluid bg-grey text-center">
+		<div class="row">
+			<div class="col-sm-12">
+				<h2 class="titulo-secao">PORTFÓLIO</h2>
+				<h3 class="subtitulo-secao">Lorem ipsum dolor sit amet consectetur.</h3>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-md-4">
+					<figure class="thumbnail">
+						<a class="portfolio-link" data-toggle="modal" href="#hpPortfolioModal1">
+							<img class="img-fluid" src="img/portfolio/023.jpg" alt="Portifólio 1">
+						</a>
+						<figcaption class="portfolio-caption">
+							<h4>Forro Flutuante</h4>
+							<p class="text-muted">Muito Foda</p>
+						</figcaption>
+					</figure>
+				</div>
+
+				<div class="col-sm-6 col-md-4">
+					<figure class="thumbnail">
+						<a class="portfolio-link" data-toggle="modal" href="#hpPortfolioModal1">
+							<img class="img-fluid" src="img/portfolio/forro-drywall.jpg" alt="Portifólio 2">
+						</a>
+						<figcaption class="portfolio-caption">
+							<h4>Forro Decorativo</h4>
+							<p class="text-muted">Eu sou Pica</p>
+						</figcaption>
+					</figure>
+				</div>
+
+				<div class="col-sm-12 col-md-4">
+					<figure class="thumbnail">
+						<a class="portfolio-link" data-toggle="modal" href="#hpPortfolioModal1">
+							<img class="img-fluid" src="img/portfolio/gesso-ou-drywall.jpg" alt="Portifólio 3">
+						</a>
+						<figcaption class="portfolio-caption">
+							<h4>Gesso ou Drywall</h4>
+							<p class="text-muted">Puta que Pariu</p>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-6 col-md-4">
+					<figure class="thumbnail">
+						<a class="portfolio-link" data-toggle="modal" href="#hpPortfolioModal1">
+							<img class="img-fluid" src="img/portfolio/residencial.jpg" alt="Portifólio 4">
+						</a>
+						<figcaption class="portfolio-caption">
+							<h4>Residencial</h4>
+							<p class="text-muted">Barba Cabelo e Bigode</p>
+						</figcaption>
+					</figure>
+				</div>
+
+				<div class="col-sm-6 col-md-4">
+					<figure class="thumbnail">
+						<a class="portfolio-link" data-toggle="modal" href="#hpPortfolioModal1">
+							<img class="img-fluid" src="img/portfolio/023.jpg" alt="Portifólio 5">
+						</a>
+						<figcaption class="portfolio-caption">
+							<h4>Forro Flutuante</h4>
+							<p class="text-muted">Muito Foda</p>
+						</figcaption>
+					</figure>
+				</div>
+
+				<div class="col-sm-6 col-md-4">
+					<figure class="thumbnail">
+						<a class="portfolio-link" data-toggle="modal" href="#hpPortfolioModal1">
+							<img class="img-fluid" src="img/portfolio/forro-drywall.jpg" alt="Portifólio 6">
+						</a>
+						<figcaption class="portfolio-caption">
+							<h4>Forro Decorativo</h4>
+							<p class="text-muted">Eu sou Pica</p>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Portfolio Modals -->
+
+	<!-- Modal 1 -->
+	<div class="portfolio-modal modal fade" id="hpPortfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl"></div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 mx-auto">
+							<div class="modal-body">
+								<!-- Project Details Go Here -->
+								<h2 class="text-uppercase">Project Name</h2>
+								<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+								<img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
+								<p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+								<ul class="list-inline">
+									<li>Date: January 2017</li>
+									<li>Client: Threads</li>
+									<li>Category: Illustration</li>
+								</ul>
+								<button class="btn btn-primary" data-dismiss="modal" type="button">
+									<i class="fa fa-times"></i>
+								Close Project</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal 2 -->
+	<div class="portfolio-modal modal fade" id="hpPortfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl"></div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 mx-auto">
+							<div class="modal-body">
+								<!-- Project Details Go Here -->
+								<h2 class="text-uppercase">Project Name</h2>
+								<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+								<img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
+								<p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+								<ul class="list-inline">
+									<li>Date: January 2017</li>
+									<li>Client: Explore</li>
+									<li>Category: Graphic Design</li>
+								</ul>
+								<button class="btn btn-primary" data-dismiss="modal" type="button">
+									<i class="fa fa-times"></i>
+								Close Project</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal 3 -->
+	<div class="portfolio-modal modal fade" id="hpPortfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl"></div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 mx-auto">
+							<div class="modal-body">
+								<!-- Project Details Go Here -->
+								<h2 class="text-uppercase">Project Name</h2>
+								<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+								<img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
+								<p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+								<ul class="list-inline">
+									<li>Date: January 2017</li>
+									<li>Client: Finish</li>
+									<li>Category: Identity</li>
+								</ul>
+								<button class="btn btn-primary" data-dismiss="modal" type="button">
+									<i class="fa fa-times"></i>
+								Close Project</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal 4 -->
+	<div class="portfolio-modal modal fade" id="hpPortfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl"></div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 mx-auto">
+							<div class="modal-body">
+								<!-- Project Details Go Here -->
+								<h2 class="text-uppercase">Project Name</h2>
+								<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+								<img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
+								<p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+								<ul class="list-inline">
+									<li>Date: January 2017</li>
+									<li>Client: Lines</li>
+									<li>Category: Branding</li>
+								</ul>
+								<button class="btn btn-primary" data-dismiss="modal" type="button">
+									<i class="fa fa-times"></i>
+								Close Project</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal 5 -->
+	<div class="portfolio-modal modal fade" id="hpPortfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl"></div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 mx-auto">
+							<div class="modal-body">
+								<!-- Project Details Go Here -->
+								<h2 class="text-uppercase">Project Name</h2>
+								<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+								<img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
+								<p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+								<ul class="list-inline">
+									<li>Date: January 2017</li>
+									<li>Client: Southwest</li>
+									<li>Category: Website Design</li>
+								</ul>
+								<button class="btn btn-primary" data-dismiss="modal" type="button">
+									<i class="fa fa-times"></i>
+								Close Project</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal 6 -->
+	<div class="portfolio-modal modal fade" id="hpPortfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl"></div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 mx-auto">
+							<div class="modal-body">
+								<!-- Project Details Go Here -->
+								<h2 class="text-uppercase">Project Name</h2>
+								<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+								<img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
+								<p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+								<ul class="list-inline">
+									<li>Date: January 2017</li>
+									<li>Client: Window</li>
+									<li>Category: Photography</li>
+								</ul>
+								<button class="btn btn-primary" data-dismiss="modal" type="button">
+									<i class="fa fa-times"></i>
+								Close Project</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<a href="#hpPage" class="btn btn-default btn-up"><span class="glyphicon glyphicon-chevron-up"></span></a>
 
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
