@@ -27,6 +27,8 @@ section {
 }
 #hpMainNav {
 	background-color: #212529;
+	margin-bottom: 0;
+	border-radius: 0;
 }
 #hpMainNav .navbar-brand {
 	color: #fed136;
@@ -101,6 +103,34 @@ section {
 	margin: 0;
 	padding: 0;
 	cursor: pointer;
+}
+.slideanim {visibility:hidden;}
+.slideElement {
+	animation-name: slide;
+	-webkit-animation-name: slide;
+	animation-duration: 1.5s;
+	-webkit-animation-duration: 1.5s;
+	visibility: visible;
+}
+@keyframes slide {
+	0% {
+		opacity: 0;
+		transform: translateY(70%);
+	} 
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+@-webkit-keyframes slide {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(70%);
+	} 
+	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0%);
+	}
 }
 
 @media (min-width: 992px) {
