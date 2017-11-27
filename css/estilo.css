@@ -9,6 +9,7 @@ body {
 }
 a {
 	color: #fed136;
+	transition: all 0.5s;
 }
 a:-webkit-any-link {
 	cursor: auto;
@@ -30,6 +31,10 @@ section {
 	margin-bottom: 0;
 	border-radius: 0;
 }
+#hpNavbar {
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
 #hpMainNav .navbar-brand {
 	color: #fed136;
 	font-family: 'Kaushan Script','Helvetica Neue',Helvetica,Arial,cursive;
@@ -43,20 +48,22 @@ section {
 	font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 #hpMainNav .navbar-nav .nav-item.active .nav-link, #hpMainNav .navbar-nav .nav-item .nav-link:hover {
-	color: #fed136;
+	color: #EF4035;
+	border-radius: 5px;
+	background-color: white;
 }
 .intro-saudacao {
-	font-size: 40px;
+	font-size: 1em;
 	font-style: italic;
 	line-height: 40px;
 	margin-bottom: 25px;
 	font-family: 'Droid Serif','Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 .saudacao-cabecalho {
-	font-size: 50px;
+	font-size: 1em;
 	font-weight: 700;
-	line-height: 75px;
-	margin-bottom: 50px;
+	line-height: 40px;
+	margin-bottom: 25px;
 	font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 .btn.btn-up {
@@ -98,11 +105,55 @@ section {
 	margin: 15px 0;
 	text-transform: none;
 }
+#portfolio * {
+	z-index: 2;
+}
 .portfolio-link img {
 	max-width: 400px;
 	margin: 0;
 	padding: 0;
 	cursor: pointer;
+}
+#portfolio .portfolio-item{
+	right: 0;
+	margin: 0 0 15px
+}
+#portfolio .portfolio-item .portfolio-link{
+	position: relative;
+	display: block;
+	max-width: 400px;
+	margin: 0 auto;
+	cursor: pointer
+}
+.icon-3x {
+	font-size: 3em!important;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transition: all ease .5s;
+	opacity: 0;
+	background: rgba(0,0,0,.7);
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+	opacity: 1;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	height: 20px;
+	margin-top: -12px;
+	text-align: center;
+	color: #fff;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+	margin-top: -12px;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content p {
+	font-size: 0.7em;
 }
 .slideanim {visibility:hidden;}
 .slideElement {
@@ -111,6 +162,14 @@ section {
 	animation-duration: 1.5s;
 	-webkit-animation-duration: 1.5s;
 	visibility: visible;
+}
+#sobre-nos, #contato {
+	padding: 60px 50px;
+}
+.logo {
+	color: blue;
+	font-size: 200px;
+	padding-left: 20%;
 }
 @keyframes slide {
 	0% {
@@ -167,10 +226,28 @@ section {
 	section {
 		padding: 150px 0;
 	}
+	.intro-saudacao {
+		font-size: 40px;
+	}
+	.saudacao-cabecalho {
+		font-size: 50px;
+		line-height: 75px;
+		margin-bottom: 50px;
+	}
+}
+@media (min-width: 425px) and (max-width: 991px) {
+	.intro-saudacao, .saudacao-cabecalho {
+		font-size: 2em;
+		line-height: 40px;
+		margin-bottom: 25px;
+	}
 }
 @media (max-width: 767px) {
 	.navbar-nav>li>a {
 		margin-left: 10px;
+	}
+	.logo {
+		display: none;
 	}
 }
 @media (max-width: 992px) {

@@ -3,6 +3,16 @@ $(function() {
 	mostrarBotaoUp();
 	suavizarScroll();
 	animarElementos();
+	
+	var windowsize = $(window).width();
+	$(window).resize(function() {
+		windowsize = $(window).width();
+		if (windowsize < 768) {
+		   $("#hpMainNav").removeClass("navbar-fixed-top");
+		} else {
+			$("#hpMainNav").addClass("navbar-fixed-top");		
+		}
+	});
 });
 
 function compactarMenu() {
