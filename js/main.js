@@ -41,7 +41,7 @@ function mostrarBotaoUp() {
 }
 
 function suavizarScroll() {
-	$(".navbar a, a[href='#hpPage']").on('click', function(event) {
+	$(".navbar a, a[href='#hpPage'], a[href='#portfolio'], a[href='#unidades'], a[href='#contato']").on('click', function(event) {
 
 		if (this.hash !== "") {
 

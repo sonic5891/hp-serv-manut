@@ -195,6 +195,25 @@ section {
 #carouselDepoimentos .item span {
 	font-style: normal;
 }
+.container-maps {
+	padding: 100px 50px;
+}
+.container-maps .nav-stacked li {
+	padding: 15px 10px;
+}
+.container-maps .nav-stacked li:hover {
+	background-color: #e6e6e6;
+	border-radius: 10px;
+}
+.container-maps .nav-stacked li a {
+	color: #595959;
+}
+.container-maps .nav-stacked li a:hover {
+	color: #000;
+}
+.container-maps .nav-stacked li a .unidade-email-maps {
+	margin-left: 10%;
+}
 @keyframes slide {
 	0% {
 		opacity: 0;
