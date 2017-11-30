@@ -166,6 +166,16 @@ section {
 	-webkit-animation-duration: 1.5s;
 	visibility: visible;
 }
+#contato {
+	background-color: #8c8c8c;
+	background-image: url(../img/map-world-image.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+}
+#contato h2 {
+	color: #fff;
+}
 #contatoForm {
 	margin-top: 50px;
 }
@@ -196,6 +206,10 @@ section {
 	box-shadow: none !important;
 	resize: none;
 	font-family: "Open Sans",Helvetica,Arial,sans-serif;
+	color: #fff;
+}
+#contato .input-hp::placeholder {
+	color: #e6e6e6;
 }
 .btn-contato, .btn-portfolio {
 	border-radius: 0;
@@ -382,10 +396,17 @@ section {
 	#contatoForm {
 		margin-top: 0;
 	}
-	.btn-contato, .btn-portfolio {
+	.btn-portfolio {
 		border-radius: 0;
 		border: solid 1px black;
 		color: black;
+		background-color: transparent;
+		margin-top: 10px;
+	}
+	.btn-contato {
+		border-radius: 0;
+		border: solid 1px #fff;
+		color: #fff;
 		background-color: transparent;
 		margin-top: 10px;
 	}
