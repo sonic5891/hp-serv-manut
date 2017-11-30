@@ -328,35 +328,7 @@
 		</div>
 	</section>
 
-	<section id="contato" class="container-fluid">
-		<h2 class="titulo-secao text-center">CONTATO</h2><br>
-		<div class="row">
-			<div class="col-sm-5">
-				<p>Entre em contato conosco. Nós retornaremos pra você em até 24 horas.</p>
-				<p><span class="glyphicon glyphicon-map-marker"></span> Piabeta, Duque de Caxias / RJ</p>
-				<p><span class="glyphicon glyphicon-phone"></span> 021 9999-9999</p>
-				<p><span class="glyphicon glyphicon-envelope"></span> hpservicos@gmail.com</p>
-			</div>
-			<div class="col-sm-7 slideanim">
-				<div class="row">
-					<div class="col-sm-6 form-group">
-						<input type="text" id="txtContatoNome" name="txtContatoNome" class="form-control" placeholder="Nome">
-					</div>
-					<div class="col-sm-6 form-group">
-						<input type="text" id="txtContatoEmail" name="txtContatoEmail" class="form-control" placeholder="Email">
-					</div>
-				</div>
-				<textarea class="form-control" id="txtContatoComment" name="txtContatoComment" placeholder="Deixe seu comentário" rows="5"></textarea><br>
-				<div class="row">
-					<div class="col-sm-12 form-group">
-						<button class="btn btn-primary pull-right" type="submit">Enviar</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="unidades" class="container-fluid bg-grey container-maps">
+	<section id="unidades" class="container-fluid container-maps">
 		<div class="row">
 			<div class="col-sm-5 thumbnail">
 				<!-- Add Google Maps -->
@@ -410,6 +382,57 @@
 		</div>
 	</section>
 
+	<section id="contato" class="container-fluid bg-grey">
+		<h2 class="titulo-secao text-center">CONTATO</h2><br>
+		<div class="row">
+			<div class="col-sm-5">
+				<p>Entre em contato conosco. Nós retornaremos pra você em até 24 horas.</p>
+				<p><span class="glyphicon glyphicon-map-marker"></span> Piabeta, Duque de Caxias / RJ</p>
+				<p><span class="glyphicon glyphicon-phone"></span> 021 9999-9999</p>
+				<p><span class="glyphicon glyphicon-envelope"></span> hpservicos@gmail.com</p>
+			</div>
+			<div class="col-sm-7 slideanim">
+				<form id="contatoForm">
+					<div class="row">
+						<div class="col-sm-12 form-group controls">
+							<input type="text" id="txtContatoNome" name="txtContatoNome" class="form-control input-hp" placeholder="Nome">
+						</div>
+						<div class="col-sm-12 form-group controls">
+							<input type="text" id="txtContatoEmail" name="txtContatoEmail" class="form-control input-hp" placeholder="Email">
+						</div>
+						<div class="col-sm-12 form-group controls">
+							<input type="text" id="txtContatoTel" name="txtContatoTel" class="form-control input-hp" placeholder="Telefone">
+						</div>
+					</div>
+					<div class="control-textarea">
+						<textarea class="form-control input-hp" id="txtContatoComment" name="txtContatoComment" placeholder="Deixe seu comentário" rows="5"></textarea><br>						
+					</div>
+					<div class="row">
+						<div class="col-sm-12 form-group">
+							<button class="btn btn-contato btn-primary pull-right" type="submit">Enviar</button>
+						</div>
+					</div>					
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<footer class="hp-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-10 col-xs-12">
+					<p class="hp-creditos">© Copyright 2017 por <a href="#">HP - Serviços e Manutencao.</a> <span class="text-direito-footer">Todos os Direitos Reservados.</span></p>
+				</div>
+				<div class="col-sm-2 col-xs-12">
+					<ul class="social social-icons-footer">
+						<li class="facebook"><a href="https://www.facebook.com/HPPVCDRYWALL/" target="_blank" data-toggle="tooltip" title="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a></li>
+						<li class="instagram"><a href="#" data-toggle="tooltip" title="" data-original-title="Instagram"><i class="fa fa-instagram"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
 	<!-- Portfolio Modals -->
 
 	<!-- Modal 1 -->
@@ -435,7 +458,7 @@
 									<li class="modal-list-item">Client: Threads</li>
 									<li class="modal-list-item">Category: Illustration</li>
 								</ul>
-								<button class="btn btn-primary" data-dismiss="modal" type="button">
+								<button class="btn btn-portfolio btn-primary" data-dismiss="modal" type="button">
 									<i class="fa fa-times"></i>
 								Close Project</button>
 							</div>
@@ -469,7 +492,7 @@
 									<li>Client: Explore</li>
 									<li>Category: Graphic Design</li>
 								</ul>
-								<button class="btn btn-primary" data-dismiss="modal" type="button">
+								<button class="btn btn-portfolio btn-primary" data-dismiss="modal" type="button">
 									<i class="fa fa-times"></i>
 								Close Project</button>
 							</div>
@@ -503,7 +526,7 @@
 									<li>Client: Finish</li>
 									<li>Category: Identity</li>
 								</ul>
-								<button class="btn btn-primary" data-dismiss="modal" type="button">
+								<button class="btn btn-portfolio btn-primary" data-dismiss="modal" type="button">
 									<i class="fa fa-times"></i>
 								Close Project</button>
 							</div>
@@ -537,7 +560,7 @@
 									<li>Client: Lines</li>
 									<li>Category: Branding</li>
 								</ul>
-								<button class="btn btn-primary" data-dismiss="modal" type="button">
+								<button class="btn btn-portfolio btn-primary" data-dismiss="modal" type="button">
 									<i class="fa fa-times"></i>
 								Close Project</button>
 							</div>
@@ -571,7 +594,7 @@
 									<li>Client: Southwest</li>
 									<li>Category: Website Design</li>
 								</ul>
-								<button class="btn btn-primary" data-dismiss="modal" type="button">
+								<button class="btn btn-portfolio btn-primary" data-dismiss="modal" type="button">
 									<i class="fa fa-times"></i>
 								Close Project</button>
 							</div>
@@ -605,7 +628,7 @@
 									<li class="modal-list-item">Client: Window</li>
 									<li class="modal-list-item">Category: Photography</li>
 								</ul>
-								<button class="btn btn-primary" data-dismiss="modal" type="button">
+								<button class="btn btn-portfolio btn-primary" data-dismiss="modal" type="button">
 									<i class="fa fa-times"></i>
 								Close Project</button>
 							</div>

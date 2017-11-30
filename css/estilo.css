@@ -166,8 +166,44 @@ section {
 	-webkit-animation-duration: 1.5s;
 	visibility: visible;
 }
+#contatoForm {
+	margin-top: 50px;
+}
+#contato .controls {
+	position: relative;
+	margin-bottom: 0;
+	padding-bottom: 0.5em;
+	border-top: 1px solid #e1e1e1;
+}
+#contato .control-textarea {
+	position: relative;
+	margin-bottom: 0;
+	padding-bottom: 0.5em;
+	border-top: 1px solid #e1e1e1;
+	border-bottom: 1px solid #e1e1e1;
+}
 #sobre-nos, #contato {
 	padding: 60px 50px;
+}
+#contato .input-hp {
+	z-index: 1;
+	position: relative;
+	padding: 25px 0;
+	border: none;
+	border-radius: 0;
+	font-size: 1.5em;
+	background: none;
+	box-shadow: none !important;
+	resize: none;
+	font-family: "Open Sans",Helvetica,Arial,sans-serif;
+}
+.btn-contato, .btn-portfolio {
+	border-radius: 0;
+	border: solid 1px black;
+	color: white;
+	border-color: #EF4035;
+	background-color: #EF4035;
+	margin-top: 10px;
 }
 .logo {
 	color: blue;
@@ -213,6 +249,66 @@ section {
 }
 .container-maps .nav-stacked li a .unidade-email-maps {
 	margin-left: 10%;
+}
+.hp-footer {
+	text-align: center;
+	background: #212733;
+	color: #fff;
+	line-height: 30px;
+	font-family: "Open Sans",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+}
+.hp-footer a {
+	color: #ccc;
+	text-decoration: none;
+}
+.hp-footer .hp-creditos {
+	line-height: 38px;
+	margin: 0;
+}
+.hp-footer ul {
+	list-style: none;
+}
+.hp-footer ul, .hp-footer li {
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+}
+.hp-footer li {
+	display: table-cell;
+	vertical-align: middle;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	transition: background .5s ease-in-out;
+	float: left;
+	list-style: none;
+}
+.hp-footer .social li:last-child, .hp-footer .social {
+	margin-right: 0 !important;
+	line-height: 30px;
+}
+.social-icons-footer {
+	display: inline-block;
+	float: none;
+}
+.social i {
+	display: inline-block;
+	font-family: FontAwesome;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 38px;
+	padding-top: 0;
+	text-align: center;
+	text-decoration: inherit;
+	text-transform: none;
+	color: #fff;
+	transition: color .5s ease-in-out;
+}
+.text-direito-footer {
+	display: none;
 }
 @keyframes slide {
 	0% {
@@ -282,6 +378,37 @@ section {
 	}
 	#carouselDepoimentos .carousel-control.right, #carouselDepoimentos .carousel-control.left {
 		opacity: 1;
+	}
+	#contatoForm {
+		margin-top: 0;
+	}
+	.btn-contato, .btn-portfolio {
+		border-radius: 0;
+		border: solid 1px black;
+		color: black;
+		background-color: transparent;
+		margin-top: 10px;
+	}
+	.btn-contato:hover, .btn-portfolio:hover {
+		color: white;
+		border-color: #EF4035;
+		background-color: #EF4035;
+	}
+	.hp-footer {
+		text-align: left;
+	}
+	.hp-footer li {
+		height: 40px;
+		border-right: 1px solid #414f5a !important;
+	}
+	.hp-footer .social li:first-child {
+		border-left: 1px solid #414f5a;
+	}
+	.social-icons-footer {
+		float: right;
+	}
+	.text-direito-footer {
+		display: inline-block;
 	}
 }
 @media (min-width: 425px) and (max-width: 991px) {
