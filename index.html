@@ -15,6 +15,22 @@
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
 	<link rel="stylesheet" type="text/css" href="css/modal.css">
 	<link rel="stylesheet" type="text/css" href="css/parallax.css">
+
+	<script type="text/javascript">
+		function myMap(latitude, longitude) {
+			if (latitude === undefined) {
+				latitude = -22.608500;
+			}
+			if (longitude === undefined) {
+				longitude = -43.183562;
+			}
+			var myCenter = new google.maps.LatLng(latitude, longitude);
+			var mapProp = {center:myCenter, zoom:15, scrollwheel:true, draggable:true, mapTypeId:google.maps.MapTypeId.ROADMAP};
+			var map = new google.maps.Map(document.getElementById("hpGoogleMap"),mapProp);
+			var marker = new google.maps.Marker({position:myCenter});
+			marker.setMap(map);
+		}
+	</script>
 </head>
 
 <body id="hpPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -99,29 +115,78 @@
 
 		<div class="row slideanim">
 			<div class="col-sm-6 col-md-4">
-				<span class="fa-stack fa-4x">
-					<i class="fa fa-circle fa-stack-2x text-primary"></i>
-					<i class="fa fa-building-o fa-stack-1x fa-inverse"></i>
-				</span>
-				<h4 class="titulo-servico">CONSTRUÇÂO</h4>
+				<a href="servico-drywall.html">
+					<img src="img/servicos/parede-em-drywall-1024x776.jpg" class="img-circle img-servicos" alt="Imagem Drywall">
+				</a>
+				<h4 class="titulo-servico">Drywall (paredes)</h4>
 				<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
 			</div>
 
 			<div class="col-sm-6 col-md-4">
-				<span class="fa-stack fa-4x">
-					<i class="fa fa-circle fa-stack-2x text-primary"></i>
-					<i class="fa fa-certificate fa-stack-1x fa-inverse"></i>
-				</span>
-				<h4 class="titulo-servico">CERTIFICAÇÃO</h4>
+				<a href="servico-drywall.html">
+					<img src="img/servicos/11899806_165003287164868_2547394956092515925_n.jpg" class="img-circle img-servicos" alt="Imagem Drywall">
+				</a>
+				<h4 class="titulo-servico">Teto de gesso decorado</h4>
 				<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
 			</div>
 
 			<div class="col-sm-12 col-md-4">
-				<span class="fa-stack fa-4x">
-					<i class="fa fa-circle fa-stack-2x text-primary"></i>
-					<i class="fa fa-wrench fa-stack-1x fa-inverse"></i>
-				</span>
-				<h4 class="titulo-servico">MANUTENÇÃO</h4>
+				<a href="servico-drywall.html">
+					<img src="img/servicos/rebaixamento-de-pvc-767212.jpg" class="img-circle img-servicos" alt="Imagem Drywall">
+				</a>
+				<h4 class="titulo-servico">Rebaixamento de Pvc</h4>
+				<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+			</div>
+		</div>
+
+		<div class="row slideanim">
+			<div class="col-sm-6 col-md-4">
+				<a href="servico-drywall.html">
+					<img src="img/servicos/pvc-decotativo.jpg" class="img-circle img-servicos" alt="Imagem Drywall">
+				</a>
+				<h4 class="titulo-servico">Pvc decorativos</h4>
+				<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+			</div>
+
+			<div class="col-sm-6 col-md-4">
+				<a href="servico-drywall.html">
+					<img src="img/servicos/gesso-ou-drywall.jpg" class="img-circle img-servicos" alt="Imagem Drywall">
+				</a>
+				<h4 class="titulo-servico">Forros removíveis</h4>
+				<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+			</div>
+
+			<div class="col-sm-12 col-md-4">
+				<a href="servico-drywall.html">
+					<img src="img/servicos/11752566_146395479025649_3723354704819076619_n.jpg" class="img-circle img-servicos" alt="Imagem Drywall">
+				</a>
+				<h4 class="titulo-servico">Divisórias</h4>
+				<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+			</div>
+		</div>
+
+		<div class="row slideanim">
+			<div class="col-sm-6 col-md-4">
+				<a href="servico-drywall.html">
+					<img src="img/servicos/18274919_463922507272943_7837062606207957635_n.jpg" class="img-circle img-servicos" alt="Imagem Drywall">
+				</a>
+				<h4 class="titulo-servico">Iluminaçao led</h4>
+				<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+			</div>
+
+			<div class="col-sm-6 col-md-4">
+				<a href="servico-drywall.html">
+					<img src="img/servicos/lustre.jpg" class="img-circle img-servicos" alt="Imagem Drywall">
+				</a>
+				<h4 class="titulo-servico">Lustres</h4>
+				<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+			</div>
+
+			<div class="col-sm-12 col-md-4">
+				<a href="servico-drywall.html">
+					<img src="img/servicos/stell-frame.jpg" class="img-circle img-servicos" alt="Imagem Drywall">
+				</a>
+				<h4 class="titulo-servico">Stell Frame</h4>
 				<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
 			</div>
 		</div>
@@ -332,24 +397,19 @@
 		<div class="row">
 			<div class="col-sm-5 thumbnail">
 				<!-- Add Google Maps -->
-				<div id="googleMap" style="height:400px;width:100%;"></div>
+				<div id="hpGoogleMap" style="height:400px;width:100%;"></div>
 				<script>
-					function myMap() {
-						var myCenter = new google.maps.LatLng(-22.608500, -43.183562);
-						var mapProp = {center:myCenter, zoom:15, scrollwheel:true, draggable:true, mapTypeId:google.maps.MapTypeId.ROADMAP};
-						var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-						var marker = new google.maps.Marker({position:myCenter});
-						marker.setMap(map);
-					}
+					myMap();
 				</script>
-				<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwmI9wjAsMKEFJovIfRm-5cIGAPbCLw3I&callback=myMap"></script>				
+				<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwmI9wjAsMKEFJovIfRm-5cIGAPbCLw3I&callback=myMap"></script>
 			</div>
 			<div class="col-sm-7">
-				<h2 class="titulo-secao">UNIDADES</h2><br>
+				<h2 class="titulo-secao" style="margin-bottom: 0">UNIDADES</h2>
+				<spa><small><i>Clique na unidade e veja a localização no mapa</i></small></span><br><br>
 				<ul class="nav nav-pills nav-stacked">
 					<li>
 						<div class="row">
-							<a href="#">
+							<a href="#unidades" onclick="myMap(-22.608500, -43.183562)">
 								<div class="col-sm-12">
 									<p><span class="glyphicon glyphicon-map-marker"></span> Av. Gov. Roberto Silveira, 364 - Parque Veneza  / Magé - RJ / CEP: 25903-587</p>
 									<p><span class="glyphicon glyphicon-phone"></span> 021 9999-9999 <span class="glyphicon glyphicon-envelope unidade-email-maps"></span> hpservicos@gmail.com</p>
@@ -359,7 +419,7 @@
 					</li>
 					<li>
 						<div class="row">
-							<a href="#">
+							<a href="#unidades" onclick="myMap(-22.624414, -43.215556)">
 								<div class="col-sm-12">
 									<p><span class="glyphicon glyphicon-map-marker"></span> Av. Gov. Roberto Silveira, 364 - Parque Veneza  / Magé - RJ / CEP: 25903-587</p>
 									<p><span class="glyphicon glyphicon-phone"></span> 021 9999-9999 <span class="glyphicon glyphicon-envelope unidade-email-maps"></span> hpservicos@gmail.com</p>
@@ -369,7 +429,7 @@
 					</li>
 					<li>
 						<div class="row">
-							<a href="#">
+							<a href="#unidades" onclick="myMap(-22.835922, -43.314328)">
 								<div class="col-sm-12">
 									<p><span class="glyphicon glyphicon-map-marker"></span> Av. Gov. Roberto Silveira, 364 - Parque Veneza  / Magé - RJ / CEP: 25903-587</p>
 									<p><span class="glyphicon glyphicon-phone"></span> 021 9999-9999 <span class="glyphicon glyphicon-envelope unidade-email-maps"></span> hpservicos@gmail.com</p>
@@ -643,7 +703,7 @@
 
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>	
 
 </body>
 </html>

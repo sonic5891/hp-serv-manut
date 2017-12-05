@@ -17,6 +17,9 @@ a {
 a:-webkit-any-link {
 	cursor: auto;
 }
+a:hover {
+	text-decoration: none;
+}
 li {
 	display: list-item;
 	text-align: -webkit-match-parent;
@@ -107,6 +110,14 @@ section {
 .titulo-servico {
 	margin: 15px 0;
 	text-transform: none;
+}
+.img-servicos {
+	width: 250px;
+	height: 200px;
+	border: 10px solid rgba(166, 166, 166, 0.2);
+}
+.img-servicos:hover {
+	border: 10px solid rgba(166, 166, 166, 0.5);
 }
 #portfolio * {
 	z-index: 2;
