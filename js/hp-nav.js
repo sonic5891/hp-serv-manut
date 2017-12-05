@@ -1,5 +1,9 @@
 $(function() {
 	
+	$("#link-hpPage").click(function() {
+		window.location.href="index.html#hpPage";
+	});
+
 	$("#li-servicos").click(function() {
 		window.location.href="index.html#servicos";
 	});
