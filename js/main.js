@@ -18,11 +18,17 @@ $(function() {
 function compactarMenu() {
 	$(window).scroll(function() {
 		if ($(window).scrollTop() > 60) {
-			$("#hpMainNav").addClass("menu-compacto");
+			//$("#hpMainNav").addClass("menu-compacto");
+			$("#hpMainNav").addClass("menu-compacto").addClass("navbar-fixed-top");
+			$("#logo-hp").removeClass("img-logo");
+			$("#logo-hp").addClass("img-logo-compacto");
 			/*Ou sem o menu transparente
 			$("#hpMainNav").addClass("menu-compacto").addClass("navbar-fixed-top");*/
 		} else {
-			$("#hpMainNav").removeClass("menu-compacto");
+			//$("#hpMainNav").removeClass("menu-compacto");
+			$("#hpMainNav").removeClass("menu-compacto").removeClass("navbar-fixed-top");
+			$("#logo-hp").removeClass("img-logo-compacto");
+			$("#logo-hp").addClass("img-logo");
 			/*OU sem o menu transparente
 			$("#hpMainNav").removeClass("menu-compacto").removeClass("navbar-fixed-top");*/
 		}

@@ -1,5 +1,6 @@
 body, html {
 	height: 100%;
+	font-size: 14px;
 }
 body {
 	overflow-x: hidden;
@@ -58,6 +59,19 @@ section {
 	border-radius: 5px;
 	background-color: white;
 }
+.img-logo {
+	width: 98px;
+	height: 35px;
+	margin-top: 8px;
+}
+.img-logo-compacto {
+	width: 98px;
+	height: 35px;
+	margin-top: 8px;
+}
+.link-img-logo {
+	padding: 0 15px;
+}
 .intro-saudacao {
 	font-size: 1em;
 	font-style: italic;
@@ -108,7 +122,8 @@ section {
 	font-family: 'Droid Serif','Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 .titulo-servico {
-	margin: 15px 0;
+	margin-top: 15px;
+	margin-bottom: 50px;
 	text-transform: none;
 }
 .img-servicos {
@@ -386,6 +401,14 @@ section {
 	#hpMainNav.menu-compacto .navbar-brand {
 		font-size: 1.25em;
 		padding: 12px 0;
+	}
+	.img-logo {
+		width: 200px;
+		height: 70px;
+		margin-top: 0;
+	}
+	.img-logo-compacto {
+		margin-top: 0;
 	}
 	section {
 		padding: 150px 0;
