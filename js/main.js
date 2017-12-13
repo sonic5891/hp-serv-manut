@@ -22,6 +22,7 @@ function compactarMenu() {
 			$("#hpMainNav").addClass("menu-compacto").addClass("navbar-fixed-top");
 			$("#logo-hp").removeClass("img-logo");
 			$("#logo-hp").addClass("img-logo-compacto");
+			$(".servico-conteudo").addClass("servico-conteudo-padding");
 			/*Ou sem o menu transparente
 			$("#hpMainNav").addClass("menu-compacto").addClass("navbar-fixed-top");*/
 		} else {
@@ -29,6 +30,7 @@ function compactarMenu() {
 			$("#hpMainNav").removeClass("menu-compacto").removeClass("navbar-fixed-top");
 			$("#logo-hp").removeClass("img-logo-compacto");
 			$("#logo-hp").addClass("img-logo");
+			$(".servico-conteudo").removeClass("servico-conteudo-padding");
 			/*OU sem o menu transparente
 			$("#hpMainNav").removeClass("menu-compacto").removeClass("navbar-fixed-top");*/
 		}
@@ -47,7 +49,8 @@ function mostrarBotaoUp() {
 }
 
 function suavizarScroll() {
-	$(".navbar a, a[href='#hpPage'], a[href='#portfolio'], a[href='#unidades'], a[href='#contato']").on('click', function(event) {
+	$(".navbar a, a[href='#hpPage'], a[href='#servicos'], a[href='#televendas'], a[href='#sobre-nos'], a[href='#unidades'], a[href='#contato']")
+		.on('click', function(event) {
 
 		if (this.hash !== "") {
 

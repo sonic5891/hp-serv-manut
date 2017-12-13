@@ -1,27 +1,27 @@
 $(function() {
 	
-	$("#link-hpPage").click(function() {
-		window.location.href="index.html#hpPage";
+	$(".link-hpPage").click(function() {
+		window.location.href="../index.html#hpPage";
 	});
 
-	$("#li-servicos").click(function() {
-		window.location.href="index.html#servicos";
+	$(".link-servicos").click(function() {
+		window.location.href="../index.html#servicos";
 	});
 
-	$("#li-portfolio").click(function() {
-		window.location.href="index.html#portfolio";
+	$(".link-televendas").click(function() {
+		window.location.href="../index.html#televendas";
 	});
 
-	$("#li-sobre-nos").click(function() {
-		window.location.href="index.html#sobre-nos";
+	$(".link-sobre-nos").click(function() {
+		window.location.href="../index.html#sobre-nos";
 	});
 
-	$("#li-unidades").click(function() {
-		window.location.href="index.html#unidades";
+	$(".link-unidades").click(function() {
+		window.location.href="../index.html#unidades";
 	});
 
-	$("#li-contato").click(function() {
-		window.location.href="index.html#contato";
+	$(".link-contato").click(function() {
+		window.location.href="../index.html#contato";
 	});
 
 });
