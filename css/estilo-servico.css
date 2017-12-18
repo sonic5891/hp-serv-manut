@@ -15,11 +15,12 @@ section {
 .servico-conteudo.servico-conteudo-padding {
 	padding-top: 150px;
 }
-ul {
+.ul-catalogo {
 	list-style-type: none;
 }
 .img-catalogo {
-	width: 100px;
-	height: 80px;
+	width: 180px;
+	height: 144px;
+	border-radius: 10px;
 	margin-top: 30px;
 }
