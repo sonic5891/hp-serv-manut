@@ -20,6 +20,7 @@ a:-webkit-any-link {
 }
 a:hover {
 	text-decoration: none;
+	cursor: pointer;
 }
 li {
 	display: list-item;
