@@ -49,7 +49,7 @@
 				<div class="collapse navbar-collapse" id="hpNavbar">
 					<ul class="nav navbar-nav navbar-right ml-auto">
 						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#servicos">SERVIÇOS</a></li>
-						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#televendas">TELEVENDAS</a></li>
+						<!--<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#televendas">TELEVENDAS</a></li>-->
 						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#sobre-nos">SOBRE NÓS</a></li>
 						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#unidades">UNIDADES</a></li>
 						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contato">CONTATO</a></li>
@@ -109,7 +109,7 @@
 		<div class="row">
 			<div class="col-sm-12">
 				<h2 class="titulo-secao text-uppercase">SERVIÇOS</h2>
-				<h3 class="subtitulo-secao text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+				<!--<h3 class="subtitulo-secao text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
 			</div>
 		</div>
 
@@ -198,7 +198,7 @@
 				<div class="col-sm-12 mx-auto text-center">
 					<span class="text-parallax">O nosso <span class="text-parallax-red">trabalho</span> é encontrar esse equilíbrio perfeito entre <span class="text-parallax-red">design</span> e <span class="text-parallax-red">funcionalidade.</span>
 					<hr class="hr-parralax-red">
-					<a id="btn-parallax" class="btn btn-primary btn-parallax-red" href="#portfolio">Como Nós Trabalhamos</a>
+					<!--<a id="btn-parallax" class="btn btn-primary btn-parallax-red" href="#portfolio">Como Nós Trabalhamos</a>-->
 				</div>
 			</div>
 		</div>
@@ -482,30 +482,33 @@
 		<h2 class="titulo-secao text-center">CONTATO</h2><br>
 		<div class="row">
 			<div class="col-sm-5">
-				<!--p>Entre em contato conosco. Nós retornaremos pra você em até 24 horas.</p-->
+				<p>Entre em contato conosco. Nós retornaremos pra você em até 24 horas.</p>
 				<p><span class="glyphicon glyphicon-map-marker"></span> Av. Gov. Roberto Silveira, nº364 - Piabetá - RJ</p>
 				<p><span class="glyphicon glyphicon-phone"></span> 021 3684-2332 / 97040-0169</p>
 				<p><span class="glyphicon glyphicon-envelope"></span> hpservicosemanutencao@gmail.com</p>
 			</div>
 			<div class="col-sm-7 slideanim">
-				<form id="contatoForm">
+				<form id="contatoForm" action="mail.php" method="post">
 					<div class="row">
 						<div class="col-sm-12 form-group controls">
-							<input type="text" id="txtContatoNome" name="txtContatoNome" class="form-control input-hp" placeholder="Nome">
+							<input type="text" id="txtContatoNome" name="txtContatoNome" class="form-control input-hp" placeholder="Nome" required="true">
 						</div>
 						<div class="col-sm-12 form-group controls">
-							<input type="text" id="txtContatoEmail" name="txtContatoEmail" class="form-control input-hp" placeholder="Email">
+							<input type="text" id="txtContatoEmail" name="txtContatoEmail" class="form-control input-hp" placeholder="Email" required="true">
 						</div>
 						<div class="col-sm-12 form-group controls">
 							<input type="text" id="txtContatoTel" name="txtContatoTel" class="form-control input-hp" placeholder="Telefone">
 						</div>
+						<div class="col-sm-12 form-group controls">
+							<input type="text" id="txtContatoAssunto" name="txtContatoAssunto" class="form-control input-hp" placeholder="Assunto">
+						</div>
 					</div>
 					<div class="control-textarea">
-						<textarea class="form-control input-hp" id="txtContatoComment" name="txtContatoComment" placeholder="Deixe seu comentário" rows="5"></textarea><br>						
+						<textarea class="form-control input-hp" id="txtContatoMsg" name="txtContatoMsg" placeholder="Deixe sua mensagem" rows="5"></textarea><br>						
 					</div>
 					<div class="row">
 						<div class="col-sm-12 form-group">
-							<button class="btn btn-contato btn-primary pull-right" type="submit">Enviar</button>
+							<button id="btnContato" class="btn btn-contato btn-primary pull-right" type="submit">Enviar</button>
 						</div>
 					</div>					
 				</form>
