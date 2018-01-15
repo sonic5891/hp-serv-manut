@@ -20,7 +20,7 @@
 	$emailsender = "contato.site@hpdrywall.com.br";
 	$nomeremetente = pegaValor("txtContatoNome");
 	$emailremetente = pegaValor("txtContatoEmail");
-	$emaildestinatario = "hpservicosemanutencao@gmail.com";
+	$emaildestinatario = "orcamento.hpdrywall@hpdrywall.com.br";
 	$teldestinatario = pegaValor("txtContatoTel");
 	$assunto = pegaValor("txtContatoAssunto");
 	$mensagemForm = pegaValor("txtContatoMsg");
